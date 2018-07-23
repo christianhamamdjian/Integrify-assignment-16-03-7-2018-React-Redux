@@ -26,15 +26,15 @@ class SinglePost extends Component {
       <div>
         <Link to="/">Back to post list</Link>
 
-        <div>{this.props.myId}</div>
+        {/* <div>{this.props.myId}</div> */}
         <Link key={selectedPost.id} to={"/posts/edit/" + selectedPost.id}>
           <button>Edit post</button>
         </Link>
         <button onClick={this.handleDelete}>Delete</button>
         <ul>
           <li>
-            <h2>{selectedPost.title}</h2>
-            <h3>{selectedPost.category}</h3>
+            <h1>{selectedPost.title}</h1>
+            <h2>{selectedPost.category}</h2>
             <p>{selectedPost.content}</p>
           </li>
         </ul>

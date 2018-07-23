@@ -29,8 +29,8 @@ class PostList extends Component {
                   <EditPost post={post} key={post.id} />
                 ) : (
                   <li>
-                    <p>{post.title}</p>
-                    <p>{post.category}</p>
+                    <h1>{post.title}</h1>
+                    <h2>{post.category}</h2>
                     <p>{post.content}</p>
                   </li>
                 )}
